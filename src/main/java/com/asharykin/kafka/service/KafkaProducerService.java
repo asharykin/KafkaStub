@@ -1,5 +1,7 @@
-package com.asharykin.kafka;
+package com.asharykin.kafka.service;
 
+import com.asharykin.kafka.dto.RequestDTO;
+import com.asharykin.kafka.dto.ResponseDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
@@ -10,10 +12,10 @@ public class KafkaProducerService {
 
     private static final String TOPIC = "postedmessages";
 
-    private final KafkaTemplate<String, ResponseDto> kafkaTemplate;
+    private final KafkaTemplate<String, ResponseDTO> kafkaTemplate;
 
-    public void sendMessage(RequestDto requestDto, String method, String uri) {
-        ResponseDto responseDto = new ResponseDto();
+    public void sendMessage(RequestDTO requestDto, String method, String uri) {
+        ResponseDTO responseDto = new ResponseDTO();
         responseDto.setMsgId(requestDto.getMsgId());
         responseDto.setTimestamp(System.currentTimeMillis());
         responseDto.setMethod(method);

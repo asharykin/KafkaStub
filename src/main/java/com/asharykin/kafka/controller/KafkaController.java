@@ -1,5 +1,7 @@
-package com.asharykin.kafka;
+package com.asharykin.kafka.controller;
 
+import com.asharykin.kafka.service.KafkaProducerService;
+import com.asharykin.kafka.dto.RequestDTO;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -16,7 +18,7 @@ public class KafkaController {
     private final KafkaProducerService kafkaProducerService;
 
     @PostMapping("/post-message")
-    public ResponseEntity<Void> postMessage(@RequestBody RequestDto requestDto, HttpServletRequest request) {
+    public ResponseEntity<Void> postMessage(@RequestBody RequestDTO requestDto, HttpServletRequest request) {
         kafkaProducerService.sendMessage(requestDto, request.getMethod(), request.getRequestURI());
         return new ResponseEntity<>(HttpStatus.OK);
     }

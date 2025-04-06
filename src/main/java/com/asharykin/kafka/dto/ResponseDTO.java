@@ -1,11 +1,10 @@
-package com.asharykin.kafka;
+package com.asharykin.kafka.dto;
 
 import lombok.*;
 
 @Getter
 @Setter
-@Data
-public class ResponseDto {
+public class ResponseDTO {
     private String msgId;
     private long timestamp;
     private String method;
