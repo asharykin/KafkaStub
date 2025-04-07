@@ -2,3 +2,43 @@ POST localhost:8080/post-message HTTP/1.1
 Content-Type: application/json
 
 {"msg_id": "1234567890"}
+###
+GET localhost:8080/actuator
+###
+GET localhost:8080/actuator/health
+###
+GET localhost:8080/actuator/beans
+###
+GET localhost:8080/actuator/configprops
+###
+GET localhost:8080/actuator/env
+###
+GET localhost:8080/actuator/metrics
+###
+GET localhost:8080/actuator/metrics/jvm.info
+###
+GET localhost:8080/actuator/metrics/jvm.buffer.count
+###
+GET localhost:8080/actuator/metrics/jvm.buffer.memory.used
+###
+GET localhost:8080/actuator/metrics/jvm.buffer.total.capacity
+###
+GET localhost:8080/actuator/metrics/jvm.memory.committed
+###
+GET localhost:8080/actuator/metrics/jvm.memory.max
+###
+GET localhost:8080/actuator/metrics/jvm.memory.used
+###
+GET localhost:8080/actuator/metrics/jvm.memory.usage.after.gc
+###
+GET localhost:8080/actuator/metrics/jvm.gc.pause
+###
+GET localhost:8080/actuator/metrics/jvm.threads.daemon
+###
+GET localhost:8080/actuator/metrics/jvm.threads.live
+###
+GET localhost:8080/actuator/metrics/jvm.threads.peak
+###
+GET localhost:8080/actuator/metrics/jvm.threads.started
+###
+GET localhost:8080/actuator/metrics/jvm.threads.states

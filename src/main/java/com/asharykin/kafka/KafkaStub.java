@@ -9,5 +9,4 @@ public class KafkaStub {
 	public static void main(String[] args) {
 		SpringApplication.run(KafkaStub.class, args);
 	}
-
 }
