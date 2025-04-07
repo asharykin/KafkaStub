@@ -13,6 +13,8 @@ GET localhost:8080/actuator/configprops
 ###
 GET localhost:8080/actuator/env
 ###
+GET localhost:8080/actuator/prometheus
+###
 GET localhost:8080/actuator/metrics
 ###
 GET localhost:8080/actuator/metrics/jvm.info
