@@ -1,7 +1,7 @@
 package com.asharykin.kafka.service;
 
 import com.asharykin.kafka.dto.RequestDTO;
-import com.asharykin.kafka.dto.ResponseDTO;
+import com.asharykin.kafka.dto.MessageDTO;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
@@ -17,21 +17,21 @@ public class KafkaProducerService {
 
     private static final String TOPIC = "postedmessages";
 
-    private final KafkaTemplate<String, ResponseDTO> kafkaTemplate;
-
     private int delay;
+
+    private final KafkaTemplate<String, MessageDTO> kafkaTemplate;
 
     @SneakyThrows
     public void sendMessage(RequestDTO requestDto, String method, String uri) {
         Thread.sleep(delay);
 
-        ResponseDTO responseDto = new ResponseDTO();
-        responseDto.setMsgId(requestDto.getMsgId());
-        responseDto.setTimestamp(System.currentTimeMillis());
-        responseDto.setMethod(method);
-        responseDto.setUri(uri);
+        MessageDTO messageDto = new MessageDTO();
+        messageDto.setMsgId(requestDto.getMsgId());
+        messageDto.setTimestamp(System.currentTimeMillis());
+        messageDto.setMethod(method);
+        messageDto.setUri(uri);
 
-        kafkaTemplate.send(TOPIC, responseDto);
+        kafkaTemplate.send(TOPIC, messageDto);
     }
 }
 

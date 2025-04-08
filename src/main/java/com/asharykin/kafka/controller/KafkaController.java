@@ -9,24 +9,25 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@RequestMapping("/post-message")
 @RequiredArgsConstructor
 public class KafkaController {
 
     private final KafkaProducerService kafkaProducerService;
 
-    @PostMapping("/post-message")
+    @PostMapping
     public ResponseEntity<Void> postMessage(@RequestBody RequestDTO requestDto, HttpServletRequest request) {
         kafkaProducerService.sendMessage(requestDto, request.getMethod(), request.getRequestURI());
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
-    @PostMapping("/post-message/delay")
+    @PostMapping("/delay")
     public ResponseEntity<String> setDelay(@RequestParam int millis) {
         kafkaProducerService.setDelay(millis);
         return new ResponseEntity<>("New delay time for /post-message stub: " + millis + " ms", HttpStatus.OK);
     }
 
-    @GetMapping("/post-message/delay")
+    @GetMapping("/delay")
     public ResponseEntity<String> getDelay() {
         int millis = kafkaProducerService.getDelay();
         return new ResponseEntity<>("Delay time for /post-message stub: " + millis + " ms", HttpStatus.OK);

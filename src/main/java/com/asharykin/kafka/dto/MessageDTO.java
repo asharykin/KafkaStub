@@ -4,10 +4,13 @@ import lombok.*;
 
 @Getter
 @Setter
-public class ResponseDTO {
+public class MessageDTO {
     private String msgId;
+
     private long timestamp;
+
     private String method;
+
     private String uri;
 }
 
