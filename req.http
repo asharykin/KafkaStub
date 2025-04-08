@@ -3,6 +3,13 @@ Content-Type: application/json
 
 {"msg_id": "1234567890"}
 ###
+POST localhost:8080/post-message/delay HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+millis=9000
+###
+GET localhost:8080/post-message/delay HTTP/1.1
+###
 GET localhost:8080/actuator
 ###
 GET localhost:8080/actuator/health
@@ -29,7 +36,7 @@ GET localhost:8080/actuator/metrics/jvm.memory.committed
 ###
 GET localhost:8080/actuator/metrics/jvm.memory.max
 ###
-GET localhost:8080/actuator/metrics/jvm.memory.used
+GET localhost:8080/actuator/metrics/jvm.memory.used?tag=area:nonheap
 ###
 GET localhost:8080/actuator/metrics/jvm.memory.usage.after.gc
 ###

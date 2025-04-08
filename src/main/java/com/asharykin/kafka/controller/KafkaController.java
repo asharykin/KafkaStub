@@ -6,10 +6,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequiredArgsConstructor
@@ -21,6 +18,18 @@ public class KafkaController {
     public ResponseEntity<Void> postMessage(@RequestBody RequestDTO requestDto, HttpServletRequest request) {
         kafkaProducerService.sendMessage(requestDto, request.getMethod(), request.getRequestURI());
         return new ResponseEntity<>(HttpStatus.OK);
+    }
+
+    @PostMapping("/post-message/delay")
+    public ResponseEntity<String> setDelay(@RequestParam int millis) {
+        kafkaProducerService.setDelay(millis);
+        return new ResponseEntity<>("New delay time for /post-message stub: " + millis + " ms", HttpStatus.OK);
+    }
+
+    @GetMapping("/post-message/delay")
+    public ResponseEntity<String> getDelay() {
+        int millis = kafkaProducerService.getDelay();
+        return new ResponseEntity<>("Delay time for /post-message stub: " + millis + " ms", HttpStatus.OK);
     }
 
     @ExceptionHandler(Exception.class)
