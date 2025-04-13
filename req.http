@@ -8,7 +8,11 @@ Content-Type: application/x-www-form-urlencoded
 
 millis=9000
 ###
+POST localhost:8080/post-message/delay?millis=7000 HTTP/1.1
+###
 GET localhost:8080/post-message/delay HTTP/1.1
+###
+###
 ###
 GET localhost:8080/actuator
 ###
@@ -18,9 +22,16 @@ GET localhost:8080/actuator/beans
 ###
 GET localhost:8080/actuator/configprops
 ###
+GET localhost:8080/actuator/configprops/spring.kafka
+###
 GET localhost:8080/actuator/env
 ###
+GET localhost:8080/actuator/env/java.home
+###
+GET localhost:8080/actuator/conditions
+###
 GET localhost:8080/actuator/prometheus
+###
 ###
 GET localhost:8080/actuator/metrics
 ###
@@ -32,6 +43,14 @@ GET localhost:8080/actuator/metrics/jvm.buffer.memory.used
 ###
 GET localhost:8080/actuator/metrics/jvm.buffer.total.capacity
 ###
+###
+GET localhost:8080/actuator/metrics/jvm.classes.loaded
+###
+GET localhost:8080/actuator/metrics/jvm.classes.unloaded
+###
+GET localhost:8080/actuator/metrics/jvm.compilation.time
+###
+###
 GET localhost:8080/actuator/metrics/jvm.memory.committed
 ###
 GET localhost:8080/actuator/metrics/jvm.memory.max
@@ -40,7 +59,19 @@ GET localhost:8080/actuator/metrics/jvm.memory.used?tag=area:nonheap
 ###
 GET localhost:8080/actuator/metrics/jvm.memory.usage.after.gc
 ###
+###
+GET localhost:8080/actuator/metrics/jvm.gc.live.data.size
+###
+GET localhost:8080/actuator/metrics/jvm.gc.max.data.size
+###
+GET localhost:8080/actuator/metrics/jvm.gc.memory.allocated
+###
+GET localhost:8080/actuator/metrics/jvm.gc.memory.promoted
+###
+GET localhost:8080/actuator/metrics/jvm.gc.overhead
+###
 GET localhost:8080/actuator/metrics/jvm.gc.pause
+###
 ###
 GET localhost:8080/actuator/metrics/jvm.threads.daemon
 ###
@@ -51,3 +82,16 @@ GET localhost:8080/actuator/metrics/jvm.threads.peak
 GET localhost:8080/actuator/metrics/jvm.threads.started
 ###
 GET localhost:8080/actuator/metrics/jvm.threads.states
+###
+GET localhost:8080/actuator/metrics/jvm.threads.states?tag=state:waiting
+###
+GET localhost:8080/actuator/metrics/jvm.threads.states?tag=state:runnable
+###
+###
+GET localhost:8080/actuator/metrics/process.cpu.time
+###
+GET localhost:8080/actuator/metrics/process.cpu.usage
+###
+GET localhost:8080/actuator/metrics/process.start.time
+###
+GET localhost:8080/actuator/metrics/process.uptime
