@@ -1,9 +1,9 @@
-POST localhost:8080/post-message HTTP/1.1
+POST localhost:8080/post-message
 Content-Type: application/json
 
 {"msg_id": "1234567890"}
 ###
-POST localhost:8080/post-message/delay HTTP/1.1
+POST localhost:8080/post-message/delay
 Content-Type: application/x-www-form-urlencoded
 
 millis=9000
@@ -35,6 +35,16 @@ GET localhost:8080/actuator/prometheus
 ###
 GET localhost:8080/actuator/metrics
 ###
+GET localhost:8080/actuator/metrics/application.started.time
+###
+GET localhost:8080/actuator/metrics/application.ready.time
+###
+###
+GET localhost:8080/actuator/metrics/http.server.requests
+###
+GET localhost:8080/actuator/metrics/http.server.requests.active
+###
+###
 GET localhost:8080/actuator/metrics/jvm.info
 ###
 GET localhost:8080/actuator/metrics/jvm.buffer.count
@@ -51,11 +61,11 @@ GET localhost:8080/actuator/metrics/jvm.classes.unloaded
 GET localhost:8080/actuator/metrics/jvm.compilation.time
 ###
 ###
+GET localhost:8080/actuator/metrics/jvm.memory.used?tag=area:nonheap
+###
 GET localhost:8080/actuator/metrics/jvm.memory.committed
 ###
 GET localhost:8080/actuator/metrics/jvm.memory.max
-###
-GET localhost:8080/actuator/metrics/jvm.memory.used?tag=area:nonheap
 ###
 GET localhost:8080/actuator/metrics/jvm.memory.usage.after.gc
 ###
@@ -95,3 +105,44 @@ GET localhost:8080/actuator/metrics/process.cpu.usage
 GET localhost:8080/actuator/metrics/process.start.time
 ###
 GET localhost:8080/actuator/metrics/process.uptime
+###
+###
+GET localhost:8080/actuator/metrics/system.cpu.count
+###
+GET localhost:8080/actuator/metrics/system.cpu.usage
+###
+###
+GET localhost:8080/actuator/metrics/disk.free
+###
+GET localhost:8080/actuator/metrics/disk.total
+###
+###
+GET localhost:8080/actuator/metrics/jdbc.connections.active
+###
+GET localhost:8080/actuator/metrics/jdbc.connections.idle
+###
+GET localhost:8080/actuator/metrics/jdbc.connections.max
+###
+GET localhost:8080/actuator/metrics/jdbc.connections.min
+###
+###
+GET localhost:8080/actuator/metrics/hikaricp.connections
+###
+GET localhost:8080/actuator/metrics/hikaricp.connections.acquire
+###
+GET localhost:8080/actuator/metrics/hikaricp.connections.active
+###
+GET localhost:8080/actuator/metrics/hikaricp.connections.creation
+###
+GET localhost:8080/actuator/metrics/hikaricp.connections.idle
+###
+GET localhost:8080/actuator/metrics/hikaricp.connections.max
+###
+GET localhost:8080/actuator/metrics/hikaricp.connections.min
+###
+GET localhost:8080/actuator/metrics/hikaricp.connections.pending
+###
+GET localhost:8080/actuator/metrics/hikaricp.connections.timeout
+###
+GET localhost:8080/actuator/metrics/hikaricp.connections.usage
+###
