@@ -8,7 +8,7 @@ Content-Type: application/x-www-form-urlencoded
 
 millis=9000
 ###
-POST localhost:8080/post-message/delay?millis=7000
+POST localhost:8080/post-message/delay?millis=1000
 ###
 GET localhost:8080/post-message/delay
 ###
@@ -160,4 +160,17 @@ GET localhost:8080/actuator/metrics/hikaricp.connections.pending
 GET localhost:8080/actuator/metrics/hikaricp.connections.timeout
 ###
 GET localhost:8080/actuator/metrics/hikaricp.connections.usage
+###
+###
+GET localhost:8080/actuator/metrics/tomcat.sessions.active.current
+###
+GET localhost:8080/actuator/metrics/tomcat.sessions.active.max
+###
+GET localhost:8080/actuator/metrics/tomcat.sessions.alive.max
+###
+GET localhost:8080/actuator/metrics/tomcat.sessions.created
+###
+GET localhost:8080/actuator/metrics/tomcat.sessions.expired
+###
+GET localhost:8080/actuator/metrics/tomcat.sessions.rejected
 ###
