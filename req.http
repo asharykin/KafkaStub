@@ -39,6 +39,8 @@ GET localhost:8080/actuator/metrics/application.started.time
 ###
 GET localhost:8080/actuator/metrics/application.ready.time
 ###
+GET localhost:8080/actuator/metrics/kafka.app.info.start.time.ms
+###
 ###
 GET localhost:8080/actuator/metrics/logback.events
 ###
@@ -187,3 +189,7 @@ GET localhost:8080/actuator/metrics/tomcat.sessions.expired
 ###
 GET localhost:8080/actuator/metrics/tomcat.sessions.rejected
 ###
+###
+GET localhost:8080/actuator/metrics/spring.kafka.template
+###
+GET localhost:8080/actuator/metrics/spring.kafka.listener
