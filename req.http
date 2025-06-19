@@ -123,9 +123,17 @@ GET localhost:8080/actuator/metrics/jvm.threads.started
 ###
 GET localhost:8080/actuator/metrics/jvm.threads.states
 ###
-GET localhost:8080/actuator/metrics/jvm.threads.states?tag=state:waiting
+GET localhost:8080/actuator/metrics/jvm.threads.states?tag=state:timed-waiting
+###
+GET localhost:8080/actuator/metrics/jvm.threads.states?tag=state:new
 ###
 GET localhost:8080/actuator/metrics/jvm.threads.states?tag=state:runnable
+###
+GET localhost:8080/actuator/metrics/jvm.threads.states?tag=state:blocked
+###
+GET localhost:8080/actuator/metrics/jvm.threads.states?tag=state:waiting
+###
+GET localhost:8080/actuator/metrics/jvm.threads.states?tag=state:terminated
 ###
 ###
 GET localhost:8080/actuator/metrics/process.cpu.time
