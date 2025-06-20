@@ -201,3 +201,7 @@ GET localhost:8080/actuator/metrics/tomcat.sessions.rejected
 GET localhost:8080/actuator/metrics/spring.kafka.template
 ###
 GET localhost:8080/actuator/metrics/spring.kafka.listener
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.commit.sync.time.ns.total
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.committed.time.ns.total
