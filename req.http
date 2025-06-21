@@ -205,3 +205,14 @@ GET localhost:8080/actuator/metrics/spring.kafka.listener
 GET localhost:8080/actuator/metrics/kafka.consumer.commit.sync.time.ns.total
 ###
 GET localhost:8080/actuator/metrics/kafka.consumer.committed.time.ns.total
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.connection.close.rate
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.connection.close.total
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.connection.count
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.connection.creation.rate
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.connection.creation.total
+###
