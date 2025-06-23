@@ -3,11 +3,6 @@ Content-Type: application/json
 
 {"msg_id": "1234567890"}
 ###
-POST localhost:8080/post-message/delay
-Content-Type: application/x-www-form-urlencoded
-
-millis=9000
-###
 POST localhost:8080/post-message/delay?millis=1000
 ###
 GET localhost:8080/post-message/delay
@@ -215,4 +210,14 @@ GET localhost:8080/actuator/metrics/kafka.consumer.connection.count
 GET localhost:8080/actuator/metrics/kafka.consumer.connection.creation.rate
 ###
 GET localhost:8080/actuator/metrics/kafka.consumer.connection.creation.total
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.coordinator.assigned.partitions
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.coordinator.commit.latency.avg
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.coordinator.commit.latency.max
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.coordinator.commit.rate
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.coordinator.commit.total
 ###
