@@ -221,3 +221,13 @@ GET localhost:8080/actuator/metrics/kafka.consumer.coordinator.commit.rate
 ###
 GET localhost:8080/actuator/metrics/kafka.consumer.coordinator.commit.total
 ###
+GET localhost:8080/actuator/metrics/kafka.consumer.coordinator.failed.rebalance.rate.per.hour
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.coordinator.failed.rebalance.total
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.coordinator.heartbeat.rate
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.coordinator.heartbeat.response.time.max
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.coordinator.heartbeat.total
+###
