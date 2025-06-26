@@ -231,3 +231,15 @@ GET localhost:8080/actuator/metrics/kafka.consumer.coordinator.heartbeat.respons
 ###
 GET localhost:8080/actuator/metrics/kafka.consumer.coordinator.heartbeat.total
 ###
+GET localhost:8080/actuator/metrics/kafka.consumer.coordinator.join.rate
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.coordinator.join.time.avg
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.coordinator.join.time.max
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.coordinator.join.total
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.coordinator.last.heartbeat.seconds.ago
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.coordinator.last.rebalance.seconds.ago
+###
