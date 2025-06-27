@@ -243,3 +243,15 @@ GET localhost:8080/actuator/metrics/kafka.consumer.coordinator.last.heartbeat.se
 ###
 GET localhost:8080/actuator/metrics/kafka.consumer.coordinator.last.rebalance.seconds.ago
 ###
+GET localhost:8080/actuator/metrics/kafka.consumer.coordinator.partition.assigned.latency.avg
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.coordinator.partition.assigned.latency.max
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.coordinator.partition.lost.latency.avg
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.coordinator.partition.lost.latency.max
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.coordinator.partition.revoked.latency.avg
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.coordinator.partition.revoked.latency.max
+###
