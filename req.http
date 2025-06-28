@@ -255,3 +255,13 @@ GET localhost:8080/actuator/metrics/kafka.consumer.coordinator.partition.revoked
 ###
 GET localhost:8080/actuator/metrics/kafka.consumer.coordinator.partition.revoked.latency.max
 ###
+GET localhost:8080/actuator/metrics/kafka.consumer.coordinator.rebalance.latency.avg
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.coordinator.rebalance.latency.max
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.coordinator.rebalance.latency.total
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.coordinator.rebalance.rate.per.hour
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.coordinator.rebalance.total
+###
