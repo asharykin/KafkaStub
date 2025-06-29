@@ -265,3 +265,11 @@ GET localhost:8080/actuator/metrics/kafka.consumer.coordinator.rebalance.rate.pe
 ###
 GET localhost:8080/actuator/metrics/kafka.consumer.coordinator.rebalance.total
 ###
+GET localhost:8080/actuator/metrics/kafka.consumer.coordinator.sync.rate
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.coordinator.sync.time.avg
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.coordinator.sync.time.max
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.coordinator.sync.total
+###
