@@ -273,3 +273,11 @@ GET localhost:8080/actuator/metrics/kafka.consumer.coordinator.sync.time.max
 ###
 GET localhost:8080/actuator/metrics/kafka.consumer.coordinator.sync.total
 ###
+GET localhost:8080/actuator/metrics/kafka.consumer.failed.authentication.rate
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.failed.authentication.total
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.failed.reauthentication.rate
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.failed.reauthentication.total
+###
