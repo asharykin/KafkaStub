@@ -281,3 +281,11 @@ GET localhost:8080/actuator/metrics/kafka.consumer.failed.reauthentication.rate
 ###
 GET localhost:8080/actuator/metrics/kafka.consumer.failed.reauthentication.total
 ###
+GET localhost:8080/actuator/metrics/kafka.consumer.fetch.manager.bytes.consumed.rate
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.fetch.manager.bytes.consumed.total
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.fetch.manager.fetch.latency.avg
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.fetch.manager.fetch.latency.max
+###
