@@ -301,3 +301,13 @@ GET localhost:8080/actuator/metrics/kafka.consumer.fetch.manager.fetch.throttle.
 ###
 GET localhost:8080/actuator/metrics/kafka.consumer.fetch.manager.fetch.total
 ###
+GET localhost:8080/actuator/metrics/kafka.consumer.fetch.manager.records.consumed.rate
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.fetch.manager.records.consumed.total
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.fetch.manager.records.lag.max
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.fetch.manager.records.lead.min
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.fetch.manager.records.per.request.avg
+###
