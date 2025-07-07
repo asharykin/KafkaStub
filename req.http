@@ -311,3 +311,13 @@ GET localhost:8080/actuator/metrics/kafka.consumer.fetch.manager.records.lead.mi
 ###
 GET localhost:8080/actuator/metrics/kafka.consumer.fetch.manager.records.per.request.avg
 ###
+GET localhost:8080/actuator/metrics/kafka.consumer.incoming.byte.rate
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.incoming.byte.total
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.io.ratio
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.io.time.ns.avg
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.io.time.ns.total
+###
