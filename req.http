@@ -321,3 +321,13 @@ GET localhost:8080/actuator/metrics/kafka.consumer.io.time.ns.avg
 ###
 GET localhost:8080/actuator/metrics/kafka.consumer.io.time.ns.total
 ###
+GET localhost:8080/actuator/metrics/kafka.consumer.io.wait.ratio
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.io.wait.time.ns.avg
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.io.wait.time.ns.total
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.io.waittime.total
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.iotime.total
+###
