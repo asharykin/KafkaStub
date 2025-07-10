@@ -331,3 +331,13 @@ GET localhost:8080/actuator/metrics/kafka.consumer.io.waittime.total
 ###
 GET localhost:8080/actuator/metrics/kafka.consumer.iotime.total
 ###
+GET localhost:8080/actuator/metrics/kafka.consumer.last.poll.seconds.ago
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.network.io.rate
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.network.io.total
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.node.incoming.byte.rate
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.node.incoming.byte.total
+###
