@@ -337,7 +337,21 @@ GET localhost:8080/actuator/metrics/kafka.consumer.network.io.rate
 ###
 GET localhost:8080/actuator/metrics/kafka.consumer.network.io.total
 ###
-GET localhost:8080/actuator/metrics/kafka.consumer.node.incoming.byte.rate
+GET localhost:8080/actuator/metrics/kafka.consumer.outgoing.byte.rate
 ###
-GET localhost:8080/actuator/metrics/kafka.consumer.node.incoming.byte.total
+GET localhost:8080/actuator/metrics/kafka.consumer.outgoing.byte.total
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.poll.idle.ratio.avg
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.reauthentication.latency.avg
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.reauthentication.latency.max
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.request.rate
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.request.size.avg
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.request.size.max
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.request.total
 ###
