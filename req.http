@@ -355,3 +355,11 @@ GET localhost:8080/actuator/metrics/kafka.consumer.request.size.max
 ###
 GET localhost:8080/actuator/metrics/kafka.consumer.request.total
 ###
+GET localhost:8080/actuator/metrics/kafka.consumer.response.rate
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.response.total
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.select.rate
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.select.total
+###
