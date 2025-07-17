@@ -363,3 +363,9 @@ GET localhost:8080/actuator/metrics/kafka.consumer.select.rate
 ###
 GET localhost:8080/actuator/metrics/kafka.consumer.select.total
 ###
+GET localhost:8080/actuator/metrics/kafka.consumer.successful.authentication.no.reauth.total
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.successful.authentication.rate
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.successful.authentication.total
+###
