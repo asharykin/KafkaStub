@@ -369,3 +369,11 @@ GET localhost:8080/actuator/metrics/kafka.consumer.successful.authentication.rat
 ###
 GET localhost:8080/actuator/metrics/kafka.consumer.successful.authentication.total
 ###
+GET localhost:8080/actuator/metrics/kafka.consumer.successful.reauthentication.rate
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.successful.reauthentication.total
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.time.between.poll.avg
+###
+GET localhost:8080/actuator/metrics/kafka.consumer.time.between.poll.max
+###
